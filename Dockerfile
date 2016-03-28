@@ -11,7 +11,6 @@ RUN set -x                                         && \
     make TARGET=linux2628                          && \
     make install                                   && \
     mv haproxy /usr/sbin                           && \
-    mv examples/haproxy.cfg /etc/haproxy.cfg       && \
     yum remove -y make gcc pcre-static pcre-devel  && \
     yum clean all                                  && \
     rm -rf /tmp/*
